@@ -13,6 +13,8 @@ public class GetLastBitcoinPriceUseCase implements UseCase<GetLastBitcoinPriceUs
 
     @Override
     public OutputValues execute(InputValues input) {
+        System.out.println("========> GetLastBitcoinPriceUseCase execute");
+        repository.persist(new BitcoinPrice(123L, "123123123123", 123123.000, 321212.09090));
         return new OutputValues(repository.getLastPrice());
     }
 

@@ -1,5 +1,7 @@
 package br.com.hoptech.btclean.presenter;
 
+import br.com.hoptech.btclean.core.usecases.bitcoinprice.BitcoinPriceRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
